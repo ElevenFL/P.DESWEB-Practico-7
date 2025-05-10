@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abstract Factory UI Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s;
+    }
+    #app {
+      padding: 20px;
+      min-height: 200px;
+      transition: background-color 0.3s;
+    }
+    .theme-controls {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-controls">
+    <button onclick="app.changeTheme(lightFactory)">Light Theme</button>
+    <button onclick="app.changeTheme(darkFactory)">Dark Theme</button>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
